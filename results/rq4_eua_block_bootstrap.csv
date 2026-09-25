@@ -1,0 +1,5 @@
+comparison,group,n_observations,block_length_folds,nominal_block_length_days,block_length_days,n_blocks,n_bootstrap_replicates,observed_delta_mae,bootstrap_ci_low,bootstrap_ci_high,p_value_one_sided_improvement,p_value_two_sided,eua_improves_if_delta_positive,ci_excludes_zero,nested_set,mean_no_eua_mae,mean_with_eua_mae
+no_EUA_error_minus_with_EUA_error,all_folds,244,4,28,28,241,5000,0.23332322402973615,-0.5281875204689545,1.1528405754355697,0.3428,0.4788,True,False,B,22.074577867892867,21.841254643863138
+no_EUA_error_minus_with_EUA_error,all_folds,244,4,28,28,241,5000,0.36400345614907276,-0.43486521877732287,1.3315128616200982,0.2524,0.3232,True,False,D,22.155779729234034,21.79177627308496
+no_EUA_error_minus_with_EUA_error,shock_folds,79,4,28,28,73,5000,0.7059830369258165,-1.7759988248352774,3.2930459783570902,0.2902,0.5488,True,False,B,30.212421031742732,29.50643799481691
+no_EUA_error_minus_with_EUA_error,shock_folds,79,4,28,28,73,5000,1.2857901247690766,-1.1437521121523246,3.8016030698844214,0.1498,0.2996,True,False,D,30.59500206205532,29.309211937286236

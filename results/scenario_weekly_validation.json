@@ -1,0 +1,12 @@
+{
+  "n_pseudo_origins": 12,
+  "n_weekly_forecasts": 156,
+  "coverage_90": 0.8717948717948718,
+  "mean_crps": 16.917046036828385,
+  "median_interval_width": 92.67953056586543,
+  "backtest_type": "conditional_on_realised_gas_and_system_paths",
+  "generated_driver_coverage_90": 0.9743589743589743,
+  "generated_driver_mean_crps": 19.189412980146482,
+  "generated_driver_n_weekly_forecasts": 156,
+  "warning": "This validates price-model uncertainty conditional on realised gas and system paths; it does not validate the political scenario probabilities."
+}

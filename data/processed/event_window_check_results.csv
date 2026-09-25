@@ -1,0 +1,7 @@
+event,date,avg_sentiment_in_window,baseline_avg,match,note
+United States and Israel begin strikes against Iran; the conflict starts.,2026-02-28,-0.319,-0.119,True,
+Iran asserts control over and restricts commercial passage through the Strait of Hormuz.,2026-03-02,-0.453,-0.129,True,
+A two-week ceasefire agreement is reached.,2026-04-07,-0.24,-0.323,True,
+The United States begins a naval blockade of Iranian ports.,2026-04-13,-0.334,-0.289,True,
+The United States and Iran reach an initial agreement to open the Strait and extend the ceasefire.,2026-06-15,-0.141,-0.176,True,
+United States forces resume the naval blockade against Iran.,2026-07-13,-0.296,-0.109,True,

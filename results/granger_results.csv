@@ -1,0 +1,57 @@
+period,cause,cause_available_column,availability_lag_days,granger_lag_interpretation,label,lag,F,p_raw,p_adj,significant,n,n_calendar_complete,calendar_days_in_subperiod
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),1,0.1698,0.6806,1.0,False,288,288,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),2,0.1822,0.8336,1.0,False,267,267,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),3,0.2166,0.8848,1.0,False,252,252,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),4,0.1554,0.9604,1.0,False,243,243,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),5,0.6527,0.6597,1.0,False,235,235,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),6,0.648,0.6917,1.0,False,228,228,364
+NEWS-AVAILABLE WINDOW,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),7,0.6487,0.7152,1.0,False,222,222,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),1,6.0156,0.0148,0.0591,False,288,288,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),2,2.7291,0.0671,0.1343,False,267,267,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),3,5.7798,0.0008,0.0055,True,252,252,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),4,3.1367,0.0154,0.0591,False,243,243,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),5,1.168,0.3258,0.3258,False,235,235,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),6,3.2876,0.0041,0.0204,True,228,228,364
+NEWS-AVAILABLE WINDOW,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),7,3.4552,0.0016,0.0096,True,222,222,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,1,3.1742,0.0757,0.1513,False,362,362,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,2,1.858,0.1575,0.1575,False,361,361,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,3,3.825,0.0102,0.0407,True,360,360,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,4,4.2021,0.0025,0.0172,True,359,359,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,5,2.924,0.0134,0.0407,True,358,358,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,6,3.3611,0.0031,0.0187,True,357,357,364
+NEWS-AVAILABLE WINDOW,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,7,3.0933,0.0036,0.0187,True,356,356,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],1,0.0384,0.8447,1.0,False,362,362,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],2,0.0687,0.9336,1.0,False,361,361,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],3,0.2548,0.8579,1.0,False,360,360,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],4,0.3172,0.8664,1.0,False,359,359,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],5,0.1687,0.974,1.0,False,358,358,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],6,0.1789,0.9825,1.0,False,357,357,364
+NEWS-AVAILABLE WINDOW,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],7,0.5467,0.7988,1.0,False,356,356,364
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),1,0.0872,0.7681,1.0,False,182,182,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),2,0.8664,0.4223,1.0,False,180,180,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),3,0.6959,0.5558,1.0,False,178,178,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),4,0.5879,0.6718,1.0,False,176,176,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),5,0.7588,0.5808,1.0,False,174,174,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),6,1.0293,0.4083,1.0,False,172,172,186
+CONFLICT PERIOD ONLY,guardian_sentiment_mean,guardian_sentiment_mean__available_d2,2,reported lag L uses raw external information at t-(L+2),News sentiment (tone),7,0.8644,0.5361,1.0,False,170,170,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),1,3.5343,0.0617,0.2163,False,182,182,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),2,1.9838,0.1406,0.2813,False,180,180,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),3,4.5588,0.0042,0.0296,True,178,178,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),4,2.376,0.0541,0.2163,False,176,176,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),5,0.8947,0.4861,0.4861,False,174,174,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),6,2.2636,0.04,0.2002,False,172,172,186
+CONFLICT PERIOD ONLY,guardian_article_count,guardian_article_count__available_d2,2,reported lag L uses raw external information at t-(L+2),News volume (coverage intensity),7,2.6572,0.0127,0.0761,False,170,170,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,1,2.0906,0.1499,0.2999,False,184,184,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,2,1.028,0.3598,0.3598,False,183,183,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,3,2.4289,0.067,0.201,False,182,182,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,4,3.1499,0.0157,0.092,False,181,181,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,5,2.686,0.023,0.0921,False,180,180,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,6,3.3081,0.0042,0.0295,True,179,179,186
+CONFLICT PERIOD ONLY,gpr_daily,gpr_daily__available_d2,2,reported lag L uses raw external information at t-(L+2),Geopolitical risk index,7,2.5725,0.0153,0.092,False,178,178,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],1,0.0133,0.9082,1.0,False,184,184,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],2,0.1243,0.8832,1.0,False,183,183,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],3,0.3343,0.8006,1.0,False,182,182,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],4,0.3739,0.827,1.0,False,181,181,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],5,0.2104,0.9578,1.0,False,180,180,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],6,0.1138,0.9947,1.0,False,179,179,186
+CONFLICT PERIOD ONLY,ttf_eur_mwh,ttf_eur_mwh__available_d2,2,reported lag L uses raw external information at t-(L+2),TTF gas price  [DIAGNOSTIC COMPARATOR],7,0.2991,0.9534,1.0,False,178,178,186

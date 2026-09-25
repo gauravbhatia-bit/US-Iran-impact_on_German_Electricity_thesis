@@ -1,0 +1,9 @@
+source,raw_feature,availability_evidence,safe_lag_days,selected_forecast_lag,lag_columns_present,source_file_present
+electricity_target,smard_mean,historical delivery outcome,1,lag1,smard_mean_lag1;smard_mean_lag2;smard_mean_lag3;smard_mean_lag4;smard_mean_lag5;smard_mean_lag6;smard_mean_lag7,True
+ttf_close,ttf_eur_mwh,manual daily close; no intraday timestamp,2,lag2,ttf_eur_mwh_lag1;ttf_eur_mwh_lag2;ttf_eur_mwh_lag3;ttf_eur_mwh_lag4;ttf_eur_mwh_lag5;ttf_eur_mwh_lag6;ttf_eur_mwh_lag7,True
+brent_close,DCOILBRENTEU,FRED daily close; no pre-auction timestamp,2,lag2,DCOILBRENTEU_lag1;DCOILBRENTEU_lag2;DCOILBRENTEU_lag3;DCOILBRENTEU_lag4;DCOILBRENTEU_lag5;DCOILBRENTEU_lag6;DCOILBRENTEU_lag7,True
+eurusd_close,DEXUSEU,FRED daily reference; no pre-auction timestamp,2,lag2,DEXUSEU_lag1;DEXUSEU_lag2;DEXUSEU_lag3;DEXUSEU_lag4;DEXUSEU_lag5;DEXUSEU_lag6;DEXUSEU_lag7,True
+gpr_daily,gpr_daily,daily index; publication time unavailable,2,lag2,gpr_daily_lag1;gpr_daily_lag2;gpr_daily_lag3;gpr_daily_lag4;gpr_daily_lag5;gpr_daily_lag6;gpr_daily_lag7,True
+guardian_news,guardian_sentiment_mean,date-only article export,2,lag2,guardian_sentiment_mean_lag1;guardian_sentiment_mean_lag2;guardian_sentiment_mean_lag3;guardian_sentiment_mean_lag4;guardian_sentiment_mean_lag5;guardian_sentiment_mean_lag6;guardian_sentiment_mean_lag7,True
+eua_auction,eua_eur_tco2,auction result date; publication time unavailable,2,lag2,,True
+hormuz_traffic,traffic_shortfall,daily observed traffic; post-cutoff timing unavailable,2,lag2,,True

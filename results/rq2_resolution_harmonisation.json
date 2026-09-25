@@ -1,0 +1,30 @@
+{
+  "switch_date": "2025-10-01",
+  "method": "Quarter-hour source observations are averaged to one value per local delivery date, bidding zone and actual delivery hour. UTC hour is retained to preserve both repeated 02:00 DST hours.",
+  "metrics_harmonised": [
+    "volatility",
+    "negative",
+    "high_tail"
+  ],
+  "metrics_retaining_direct_interval_means": [
+    "mean",
+    "peak",
+    "offpeak"
+  ],
+  "high_tail_threshold_basis": "95th percentile of canonical hourly pre-conflict prices by zone",
+  "source_rows": {
+    "hourly": 299633,
+    "quarter_hour": 199872
+  },
+  "canonical_hour_rows": {
+    "hourly": 299633,
+    "quarter_hour": 49968
+  },
+  "hours_with_unexpected_source_interval_count": 0,
+  "max_abs_mean_resampling_difference": 5.684341886080802e-14,
+  "n_mean_resampling_invariance_failures": 0,
+  "max_abs_peak_resampling_difference": 5.684341886080802e-14,
+  "n_peak_resampling_invariance_failures": 0,
+  "max_abs_offpeak_resampling_difference": 2.842170943040401e-14,
+  "n_offpeak_resampling_invariance_failures": 0
+}

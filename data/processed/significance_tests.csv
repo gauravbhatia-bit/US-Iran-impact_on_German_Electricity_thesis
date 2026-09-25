@@ -1,0 +1,28 @@
+comparison_type,period,model_a,model_b,n_obs,n_folds,mae_a,mae_b,diff_pct,dm_stat,p_raw,p_adj,verdict
+ablation,BASELINE,A price+calendar,B +market,165,165,28.814,24.665,14.4,3.344,0.0010228109546690511,0.005114054773345256,B +market better
+ablation,BASELINE,B +market,C +weather,165,165,24.665,24.601,0.26,0.104,0.9176922427786467,1.0,no significant difference
+ablation,BASELINE,C +weather,D +geopolitical,165,165,24.601,25.483,-3.59,-1.607,0.10993110354677471,0.32979331064032413,no significant difference
+ablation,BASELINE,D +geopolitical,E +news,165,165,25.483,25.536,-0.21,-0.12,0.904848901648857,1.0,no significant difference
+ablation,BASELINE,A price+calendar,E +news,165,165,28.814,25.536,11.37,2.562,0.01132295640242087,0.04529182560968348,E +news better
+ablation,SHOCK_2022,A price+calendar,B +market,52,52,48.44,39.03,19.43,1.873,0.0668440422422889,0.3342202112114445,no significant difference
+ablation,SHOCK_2022,B +market,C +weather,52,52,39.03,40.359,-3.4,-0.496,0.622217119588657,0.7134118692332936,no significant difference
+ablation,SHOCK_2022,C +weather,D +geopolitical,52,52,40.359,42.823,-6.11,-1.037,0.3045602180948177,0.7134118692332936,no significant difference
+ablation,SHOCK_2022,D +geopolitical,E +news,52,52,42.823,40.472,5.49,1.195,0.23780395641109786,0.7134118692332936,no significant difference
+ablation,SHOCK_2022,A price+calendar,E +news,52,52,48.44,40.472,16.45,1.6,0.11586153745446137,0.4634461498178455,no significant difference
+ablation,SHOCK_2026,A price+calendar,B +market,27,27,24.256,23.826,1.78,0.222,0.8260924044942559,0.8615939928292322,no significant difference
+ablation,SHOCK_2026,B +market,C +weather,27,27,23.826,25.716,-7.93,-1.087,0.2870487583658896,0.8611462750976688,no significant difference
+ablation,SHOCK_2026,C +weather,D +geopolitical,27,27,25.716,24.125,6.19,1.277,0.21290642108974556,0.8516256843589822,no significant difference
+ablation,SHOCK_2026,D +geopolitical,E +news,27,27,24.125,26.175,-8.5,-1.864,0.07367509439373054,0.3683754719686527,no significant difference
+ablation,SHOCK_2026,A price+calendar,E +news,27,27,24.256,26.175,-7.91,-0.8,0.4307969964146161,0.8615939928292322,no significant difference
+cross-arm,BASELINE,Naive,Chronos,165,165,19.439,18.54,4.62,0.802,0.4236626874324041,0.4236626874324041,no significant difference
+cross-arm,BASELINE,Naive,Prophet+XGB,165,165,19.439,25.277,-30.03,-3.366,0.0009503981322160904,0.0019007962644321807,Naive better
+cross-arm,BASELINE,Prophet,Prophet+XGB,165,165,35.467,25.277,28.73,6.418,1.4229242228935846e-09,5.691696891574338e-09,Prophet+XGB better
+cross-arm,BASELINE,Chronos,Prophet+XGB,165,165,18.54,25.277,-36.33,-4.365,2.242469781910117e-05,6.727409345730351e-05,Chronos better
+cross-arm,SHOCK_2022,Naive,Chronos,52,52,35.142,33.592,4.41,0.392,0.6968474746577944,0.6968474746577944,no significant difference
+cross-arm,SHOCK_2022,Naive,Prophet+XGB,52,52,35.142,40.877,-16.32,-1.13,0.26362644508521527,0.5272528901704305,no significant difference
+cross-arm,SHOCK_2022,Prophet,Prophet+XGB,52,52,92.905,40.877,56.0,5.775,4.6001978004639454e-07,1.8400791201855782e-06,Prophet+XGB better
+cross-arm,SHOCK_2022,Chronos,Prophet+XGB,52,52,33.592,40.877,-21.69,-2.163,0.03522783419835429,0.10568350259506287,no significant difference
+cross-arm,SHOCK_2026,Naive,Chronos,27,27,27.445,21.889,20.24,1.959,0.06087975349495478,0.24351901397981912,no significant difference
+cross-arm,SHOCK_2026,Naive,Prophet+XGB,27,27,27.445,24.455,10.89,0.795,0.43395985856998376,0.8679197171399675,no significant difference
+cross-arm,SHOCK_2026,Prophet,Prophet+XGB,27,27,25.089,24.455,2.53,0.21,0.8354327494157496,0.8679197171399675,no significant difference
+cross-arm,SHOCK_2026,Chronos,Prophet+XGB,27,27,21.889,24.455,-11.72,-1.172,0.2519713322737476,0.7559139968212427,no significant difference

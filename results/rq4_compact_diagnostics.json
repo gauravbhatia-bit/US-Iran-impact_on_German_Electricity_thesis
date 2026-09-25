@@ -1,0 +1,20 @@
+{
+  "forecast_residual_load_source": "7-day seasonal-naive proxy from energy_charts_german_system.csv",
+  "forecast_residual_load_threshold_policy": "training-fold q75",
+  "eua_source": "eua_daily.csv",
+  "coal_source": null,
+  "traffic_source": "imf_portwatch_hormuz.csv",
+  "eua_available_rows": 1928,
+  "coal_available_rows": 0,
+  "daily_close_safe_lag_days": 2,
+  "note": "EUA/coal are not imputed or synthetically generated; short market gaps are bounded and carry staleness flags.",
+  "feature_counts": {
+    "A_price_calendar": 11,
+    "B_plus_fundamentals": 16,
+    "C_plus_hormuz": 17,
+    "D_plus_interactions": 19
+  },
+  "n_completed_folds": 244,
+  "n_shock_folds": 79,
+  "model": "HistGradientBoostingRegressor with fold-trained median imputation"
+}

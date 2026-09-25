@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "retrieved_at_utc": "2026-09-13T22:57:21.943957+00:00",
+  "analysis_start": "2021-01-01",
+  "analysis_end": "2026-09-12",
+  "sources": {
+    "smard": "https://www.smard.de/app/chart_data",
+    "fred": "https://fred.stlouisfed.org/graph/fredgraph.csv",
+    "gpr": "https://www.matteoiacoviello.com/gpr_files/data_gpr_daily_recent.xls",
+    "guardian": "https://content.guardianapis.com/search",
+    "ttf": "manual Investing.com export"
+  },
+  "files": {
+    "Dutch_TTF_Natural_Gas_Futures_Historical_Data.csv": {
+      "rows": 1431,
+      "columns": [
+        "Date",
+        "Price",
+        "Open",
+        "High",
+        "Low",
+        "Vol.",
+        "Change %"
+      ],
+      "sha256": "712cf71df8130951a44daa2f0e1b5371eaca43861272f86eaccb0108b4f07c39"
+    },
+    "brent_fred.csv": {
+      "rows": 1483,
+      "columns": [
+        "date",
+        "DCOILBRENTEU"
+      ],
+      "sha256": "92efd07ab7c4e3acce9a4bcf73bbf7e3e7a420182c702153bf0c1c83c8e0c650"
+    },
+    "eurusd_fred.csv": {
+      "rows": 1480,
+      "columns": [
+        "date",
+        "DEXUSEU"
+      ],
+      "sha256": "0bee7a2c0b57ff0787fbc6c7fa777a7ea95a55b58388eacbc903e701bdde661b"
+    },
+    "event_table.csv": {
+      "rows": 6,
+      "columns": [
+        "date",
+        "event",
+        "category",
+        "expected_price_direction",
+        "verified",
+        "source_url",
+        "source_note"
+      ],
+      "sha256": "de4ec74fe733ef3e5bf81ac0af944d29836873940448e60448be0e7786cadaaf"
+    },
+    "gpr_index.csv": {
+      "rows": 15226,
+      "columns": [
+        "DAY",
+        "N10D",
+        "GPRD",
+        "GPRD_ACT",
+        "GPRD_THREAT",
+        "date",
+        "GPRD_MA30",
+        "GPRD_MA7",
+        "event",
+        "var_name",
+        "var_label"
+      ],
+      "sha256": "bcec2ffea14f14fd61252a92b25f4659f61e0d1aff23aff119fe57f31d3935d8"
+    },
+    "guardian_daily_sentiment_clean.csv": {
+      "rows": 331,
+      "columns": [
+        "date",
+        "guardian_sentiment_mean",
+        "guardian_sentiment_min",
+        "guardian_sentiment_max",
+        "guardian_article_count"
+      ],
+      "sha256": "2f25ed4c3e632f6f22eb3fb107b3d13adf56c11ab74fb4b8e4ee14b95d5004f1"
+    },
+    "guardian_sentiment_articles_all.csv": {
+      "rows": 4020,
+      "columns": [
+        "date",
+        "article_id",
+        "section",
+        "title",
+        "trailText",
+        "sentiment",
+        "likely_noise",
+        "noise_reason"
+      ],
+      "sha256": "634bb81787a9d21d7eaffd28463c150eecbb9b3439ed76a7f88b1d37c053449d"
+    },
+    "guardian_sentiment_articles_clean.csv": {
+      "rows": 3736,
+      "columns": [
+        "date",
+        "article_id",
+        "section",
+        "title",
+        "trailText",
+        "sentiment",
+        "likely_noise",
+        "noise_reason"
+      ],
+      "sha256": "bdd0dafbf267cd7f3dfefad199befda4b32e6af862af3d2d907600d1a4ab3691"
+    },
+    "smard_day_ahead_price.csv": {
+      "rows": 49943,
+      "columns": [
+        "datetime",
+        "price_eur_mwh"
+      ],
+      "sha256": "fd762909af682b2e583b0e3b15b0ab67c955b2f0b332544bd8d81c0dcadf7c8e"
+    },
+    "smard_generation.csv": {
+      "rows": 49943,
+      "columns": [
+        "datetime",
+        "wind_offshore_mwh",
+        "wind_onshore_mwh",
+        "solar_mwh"
+      ],
+      "sha256": "7a0bc9baab9ddb76854392b4c50b678752a7d08adfc6f5c2a7fadd95d751969d"
+    },
+    "ttf_gas_price.csv": {
+      "rows": 1431,
+      "columns": [
+        "date",
+        "ttf_eur_mwh"
+      ],
+      "sha256": "abed6b228a2d0ae35c3f76ab740897af4eaec2dfd5f619f819cca4a4c334f06e"
+    }
+  }
+}

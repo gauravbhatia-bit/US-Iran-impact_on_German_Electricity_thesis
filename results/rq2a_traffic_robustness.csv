@@ -1,0 +1,9 @@
+status,term,coefficient,p_value,n_obs,baseline_median_vessels
+optional_robustness,shortfall_lag0,2.1327718852185034,0.1143116937955398,602,81.0
+optional_robustness,shortfall_lag1,0.35934383877037046,0.746006580428386,602,81.0
+optional_robustness,shortfall_lag2,0.3425066664066934,0.6277292085337034,602,81.0
+optional_robustness,shortfall_lag3,-0.04636930041193656,0.9438244410310775,602,81.0
+optional_robustness,shortfall_lag4,0.17482148598979427,0.8126033467011339,602,81.0
+optional_robustness,shortfall_lag5,-1.5883962790639046,0.22114426607349524,602,81.0
+optional_robustness,shortfall_lag6,0.1399331029566992,0.8483115999647093,602,81.0
+optional_robustness,shortfall_lag7,-1.2636816290681807,0.0548085010846265,602,81.0

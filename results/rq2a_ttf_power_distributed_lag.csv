@@ -1,0 +1,16 @@
+term,lag_days,coefficient,std_error,p_value,n_obs,model
+ttf_return_lag1,1,0.952343688827423,0.2536461481473064,0.00017360796929270314,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag2,2,0.8737470782753953,0.238203518758643,0.00024438869511950607,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag3,3,-0.13801878360151087,0.20772892012368482,0.506422969606309,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag4,4,0.41680952495829876,0.20832041159485853,0.045412888892391805,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag5,5,0.45969279373978683,0.16509185006629193,0.005361579135381604,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag6,6,0.29777547706563984,0.1668691025869692,0.07434482532823954,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag7,7,0.4059216716163278,0.15786044715286104,0.01012895267133087,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag8,8,-0.024022156265345297,0.16850539948460475,0.8866375658219146,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag9,9,-0.26388402318317794,0.2471620188434559,0.28567569323638087,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag10,10,-0.27421530887159007,0.1975195202790524,0.16504731662836847,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag11,11,-0.04622473379790284,0.13790051186913918,0.7374715843627458,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag12,12,-0.12139055884243372,0.23479761137850647,0.6051555827623598,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag13,13,0.21214873702633744,0.15516805076396387,0.1715566114001601,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+ttf_return_lag14,14,-0.043616063364179336,0.17439046886633486,0.802505550094571,2052,German power change ~ lagged TTF returns + controls + HAC(14)
+cumulative_lag1_14,1-14,2.707067343583069,0.6127622567537726,9.970591894559178e-06,2052,Wald sum of distributed TTF lags

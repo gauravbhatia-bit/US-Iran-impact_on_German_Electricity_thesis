@@ -1,0 +1,42 @@
+# Bulk Energy-Charts exports (over GitHub's file-size limit).
+# Refetch: python src/pipeline/01b_enhancement_collection.py --end-date 2026-09-12
+data/raw/energy_charts_*.csv
+
+# Third-party content that is not ours to redistribute.
+# Dutch TTF: manual Investing.com export. Guardian: full article text.
+# The derived daily series (ttf_gas_price.csv, guardian_daily_sentiment_clean.csv)
+# are committed, so the pipeline runs from 02_preprocessing without them.
+data/raw/Dutch_TTF_Natural_Gas_Futures_Historical_Data.csv
+data/raw/guardian_sentiment_articles_*.csv
+
+# Duplicate of master_features.csv, written for inspection only
+data/processed/master_features_preview.csv
+
+# Dissertation report: kept local so the thesis prose is not published
+output/
+
+# Secrets
+.env
+*.key
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.runtime/
+.python-*-installer.exe
+.python311-embed.zip
+.get-pip.py
+python-install.log
+tmp/
+
+# Model weights (Chronos downloads ~800MB at runtime)
+*.safetensors
+*.pt
+
+# OS
+.DS_Store
+Thumbs.db

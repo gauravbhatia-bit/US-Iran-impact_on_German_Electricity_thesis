@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "analysis_start": "2021-01-04",
+  "analysis_end": "2026-09-01",
+  "rows": 2067,
+  "columns": 119,
+  "source_manifest_sha256": "b4af50466db012c52b0f9a47190bcfb64fbc7d1675ae7594e76c86cb5d14ee25",
+  "master_features_sha256": "6479544a4c3de93106128e368c2958b5fdf995fd2d9e95f423068cdd86a8a997",
+  "forecast_feature_policy": "electricity target history enters at lag 1; daily closing-market, geopolitical, news and auction features use a conservative D-2 availability lag unless a timestamped pre-cutoff observation exists; renewable/Dunkelflaute signals enter only lagged and rolling statistics are shifted according to the same policy",
+  "daily_close_safe_lag_days": 2,
+  "raw_analysis_end": "2026-09-12"
+}

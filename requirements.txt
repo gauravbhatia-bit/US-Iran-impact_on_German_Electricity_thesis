@@ -1,0 +1,18 @@
+# Reproducible Python 3.11 environment. Update deliberately and rerun the
+# complete validation/model sequence before changing any pin.
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.14.1
+requests==2.32.3
+urllib3==2.2.3
+matplotlib==3.9.2
+openpyxl==3.1.5
+xlrd==2.0.1
+holidays==0.59
+vaderSentiment==3.3.2
+statsmodels==0.14.4
+scikit-learn==1.5.2
+prophet==1.4.0
+xgboost==2.1.2
+chronos-forecasting==1.4.1
+torch==2.5.1

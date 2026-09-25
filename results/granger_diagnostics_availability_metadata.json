@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "analysis": "RQ5 Granger diagnostic checks",
+  "input_path": "data\\processed\\master_features.csv",
+  "input_sha256": "6479544a4c3de93106128e368c2958b5fdf995fd2d9e95f423068cdd86a8a997",
+  "input_date_start": "2021-01-04",
+  "input_date_end": "2026-09-01",
+  "date_only_external_availability_rule": "Guardian article volume, TTF, GPR and Brent are shifted two calendar days before differences, correlations, ECM construction and Granger-lag construction.",
+  "effective_external_timing": "For target day t, a reported Granger lag L uses raw external information from t-(L+2).",
+  "calendar_lag_rule": "All Granger designs are built on a complete daily calendar. A row is retained only if its differenced target and every required calendar-day target/cause/control lag are observed; missing Guardian days are not compressed, zero-filled or interpolated.",
+  "target_history_rule": "The realised electricity price is retained as the target; only historical target lags enter the restricted/unrestricted models.",
+  "interpretation_scope": "These are retrospective robustness diagnostics with conservative external-data availability, not operational same-day forecasts.",
+  "series": [
+    {
+      "raw_column": "guardian_article_count",
+      "available_column": "guardian_article_count__available_d2",
+      "availability_lag_days": 2,
+      "raw_start": "2025-09-01",
+      "raw_end": "2026-09-01",
+      "usable_start": "2025-09-03",
+      "usable_end": "2026-09-01",
+      "raw_date_at_usable_start": "2025-09-01",
+      "raw_date_at_usable_end": "2026-08-30"
+    },
+    {
+      "raw_column": "ttf_eur_mwh",
+      "available_column": "ttf_eur_mwh__available_d2",
+      "availability_lag_days": 2,
+      "raw_start": "2021-01-04",
+      "raw_end": "2026-09-01",
+      "usable_start": "2021-01-06",
+      "usable_end": "2026-09-01",
+      "raw_date_at_usable_start": "2021-01-04",
+      "raw_date_at_usable_end": "2026-08-30"
+    },
+    {
+      "raw_column": "gpr_daily",
+      "available_column": "gpr_daily__available_d2",
+      "availability_lag_days": 2,
+      "raw_start": "2021-01-04",
+      "raw_end": "2026-09-01",
+      "usable_start": "2021-01-06",
+      "usable_end": "2026-09-01",
+      "raw_date_at_usable_start": "2021-01-04",
+      "raw_date_at_usable_end": "2026-08-30"
+    },
+    {
+      "raw_column": "DCOILBRENTEU",
+      "available_column": "DCOILBRENTEU__available_d2",
+      "availability_lag_days": 2,
+      "raw_start": "2021-01-04",
+      "raw_end": "2026-09-01",
+      "usable_start": "2021-01-06",
+      "usable_end": "2026-09-01",
+      "raw_date_at_usable_start": "2021-01-04",
+      "raw_date_at_usable_end": "2026-08-30"
+    }
+  ]
+}

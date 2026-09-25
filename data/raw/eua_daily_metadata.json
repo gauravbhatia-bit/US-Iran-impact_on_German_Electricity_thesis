@@ -1,0 +1,27 @@
+{
+  "sources": [
+    "C:\\Users\\gaura\\Downloads\\emission-spot-primary-market-auction-report-2012-2025-data.zip",
+    "C:\\Users\\gaura\\Downloads\\emission-spot-primary-market-auction-report-2026-data.xlsx"
+  ],
+  "source_members": [
+    "emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2021-data.xlsx",
+    "emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2022-data.xlsx",
+    "emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2023-data.xlsx",
+    "emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2024-data.xlsx",
+    "emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2025-data.xlsx",
+    "emission-spot-primary-market-auction-report-2026-data.xlsx"
+  ],
+  "filters": [
+    "contract == T3PA (general EU allowances)",
+    "status == successful",
+    "positive auction volume and numeric auction price",
+    "EAA3 aviation allowances excluded",
+    "volume-weighted mean when multiple qualifying auctions share a date"
+  ],
+  "source_rows_read": 1266,
+  "output_rows": 1234,
+  "first_date": "2021-01-29",
+  "last_date": "2026-09-16",
+  "unit": "EUR per tonne CO2 equivalent",
+  "price_definition": "EEX primary-market EUA auction clearing price"
+}

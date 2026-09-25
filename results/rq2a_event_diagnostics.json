@@ -1,0 +1,19 @@
+{
+  "primary_exposure": "source-verified hormuz_event_table.csv",
+  "states": [
+    "open",
+    "restricted",
+    "severely_restricted"
+  ],
+  "brent_primary": false,
+  "exact_transition_times_verified": false,
+  "n_daily_rows": 2067,
+  "state_counts": {
+    "open": 1881,
+    "severely_restricted": 166,
+    "restricted": 20
+  },
+  "n_source_events": 4,
+  "placebo_p_value": 0.056179775280898875,
+  "traffic_is_robustness_only": true
+}

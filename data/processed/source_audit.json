@@ -1,0 +1,78 @@
+{
+  "ttf": {
+    "source": "Dutch_TTF_Natural_Gas_Futures_Historical_Data.csv",
+    "rows": 1431,
+    "first_date": "2021-01-04",
+    "last_date": "2026-09-01",
+    "august_31_2026_present": true,
+    "august_31_2026_price": 70.27,
+    "roll_window_max_abs_return_pct": 4.913480344585608,
+    "roll_window": [
+      {
+        "date": "2026-08-25 00:00:00",
+        "price": 66.588,
+        "return_pct": -2.5351288056206123
+      },
+      {
+        "date": "2026-08-26 00:00:00",
+        "price": 65.626,
+        "return_pct": -1.4447047516068845
+      },
+      {
+        "date": "2026-08-27 00:00:00",
+        "price": 68.095,
+        "return_pct": 3.7622283850912597
+      },
+      {
+        "date": "2026-08-28 00:00:00",
+        "price": 66.979,
+        "return_pct": -1.638886849254717
+      },
+      {
+        "date": "2026-08-31 00:00:00",
+        "price": 70.27,
+        "return_pct": 4.913480344585608
+      },
+      {
+        "date": "2026-09-01 00:00:00",
+        "price": 70.91,
+        "return_pct": 0.9107727337412941
+      }
+    ],
+    "contract_identifier_available": false,
+    "interpretation": "The manual export does not contain contract identifiers. The roll window is flagged for sensitivity analysis; no discontinuity is assumed."
+  },
+  "electricity_resolution": {
+    "source": "energy_charts_prices.csv",
+    "rows": 949067,
+    "zones": [
+      "AT",
+      "BE",
+      "CH",
+      "CZ",
+      "DE-LU",
+      "DK1",
+      "DK2",
+      "FR",
+      "NL",
+      "NO2",
+      "PL",
+      "SE4",
+      "SI"
+    ],
+    "pre_switch_counts": {
+      "24": 1725,
+      "23": 5,
+      "25": 4
+    },
+    "post_switch_counts": {
+      "96": 345,
+      "100": 1,
+      "92": 1
+    },
+    "max_abs_mean_difference": 5.684341886080802e-14,
+    "n_mean_invariance_failures": 0,
+    "post_switch_indicator_required": true,
+    "interpretation": "Daily means are arithmetically invariant only when intervals are complete and local-day/DST handling is consistent. The hourly-to-quarter-hour market design change remains a sensitivity limitation."
+  }
+}

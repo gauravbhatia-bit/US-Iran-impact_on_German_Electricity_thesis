@@ -1,0 +1,13 @@
+term,coefficient,std_error,p_value,n_obs,model
+const,0.408799137231225,0.33429749945514714,0.22138246911393078,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+state_restricted,0.20584980919926035,0.34913426881540055,0.5554583824664454,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+state_severely_restricted,0.4365916757227987,0.43730703879493743,0.31810280473723473,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+ttf_return_lag1,0.027955242483343523,0.03586143469658842,0.4356646451120535,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+ttf_return_lag2,-0.027227320713140178,0.030031901226337435,0.3646113324020783,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+ttf_return_lag3,-0.019939880872399243,0.025257879787473722,0.4298479394695479,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_1,0.109824895396686,0.44858372036541144,0.8065912692853187,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_2,-0.14392499932062475,0.4818677936540543,0.7651830677400735,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_3,0.07397919543885419,0.4741188279169506,0.8760053264724575,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_4,-1.0697595885587752,0.4179951282537711,0.010489426299744036,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_5,-0.40757721711439326,0.34082002945202194,0.2317464138516926,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)
+dow_6,-0.45207520685141833,0.343112970632825,0.1876477800852311,2063,TTF return ~ Hormuz state + own lags + weekday + HAC(7)

@@ -1,0 +1,53 @@
+{
+  "pre_conflict_median_daily_transits": 81.0,
+  "observed_min_daily_transits": 0,
+  "observed_max_shortfall": 1.0,
+  "gpr_comparator": {
+    "transit_shortfall_coef": 31.086699449018962,
+    "transit_shortfall_p": 3.1679539590352065e-14,
+    "gpr_coef": -2.509957270506088,
+    "gpr_p": 0.017491719470850504,
+    "correlation": 0.37632342019227016,
+    "n": 609,
+    "interpretation": "GPR is a comparator for broad risk, never a physical-closure proxy"
+  },
+  "hourly_marginality": {
+    "gas_base_coef": 0.027053452352156296,
+    "gas_base_p": 0.27053476160952017,
+    "gas_likely_increment": 0.036234375387145655,
+    "gas_likely_increment_p": 0.6759750615448041,
+    "gas_likely_total": 0.06328782773930194,
+    "gas_generation_p75_mw": 7207.831250000001,
+    "residual_load_p75_mw": 42636.774999999994,
+    "gas_likely_share": 0.15506769708831897,
+    "n_hours": 49559,
+    "n_day_clusters": 2065
+  },
+  "external_eia_flow_validation": {
+    "comparison": "2026-Q2 versus 2025-Q4",
+    "lng_change_percent": -92.38095238095238,
+    "oil_change_percent": -77.31481481481481,
+    "source_url": "https://www.eia.gov/outlooks/steo/report/energysecurity/article.php",
+    "use": "external quarterly validation only; not expanded into daily rows"
+  },
+  "insurance_cost_measure": {
+    "available": false,
+    "reason": "No auditable daily war-risk premium series was available; the analysis omits it rather than fabricating or interpolating values.",
+    "expected_path": "data\\raw\\hormuz_insurance_daily.csv",
+    "template": "data/templates/hormuz_insurance_daily_template.csv"
+  },
+  "shipping_status_validation": {
+    "observed_at_utc": "2026-06-18T00:00:00+00:00",
+    "status": "open_with_moderate_threat",
+    "scope": "strait_of_hormuz",
+    "exact_transition_time_verified": false,
+    "source_org": "Joint Maritime Information Center via IMO",
+    "source_url": "https://wwwcdn.imo.org/localresources/en/MediaCentre/HotTopics/Documents/JMIC%20Advisory%20Note%2000926%20SoH%20open.pdf",
+    "interpretation": "independent status observation only; not treated as an exact reopening timestamp"
+  },
+  "limitations": [
+    "One conflict episode: estimates are associative, not structurally causal.",
+    "AIS jamming, spoofing and dark vessels can bias PortWatch traffic counts.",
+    "Gas-likely marginal hours are a transparent proxy, not plant-level bid-stack proof."
+  ]
+}

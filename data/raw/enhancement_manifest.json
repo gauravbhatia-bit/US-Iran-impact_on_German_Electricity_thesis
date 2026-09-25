@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "retrieved_at_utc": "2026-09-16T12:14:13.921213+00:00",
+  "analysis_start": "2021-01-01",
+  "analysis_end": "2026-09-12",
+  "sources": {
+    "energy_charts": "https://api.energy-charts.info",
+    "portwatch": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query",
+    "eia_hormuz_flows": "https://www.eia.gov/outlooks/steo/report/energysecurity/article.php",
+    "shipping_status": "Joint Maritime Information Center advisory hosted by IMO",
+    "hormuz_event_table": "Source-labelled event table compiled from the validated event and shipping evidence files"
+  },
+  "declared_lower_direct_gas_donors": [
+    "FR",
+    "CH",
+    "NO2",
+    "SE4",
+    "DK1",
+    "DK2"
+  ],
+  "unavailable_optional_price_zones": {
+    "IT-NORTH": "unsupported historical request"
+  },
+  "files": {
+    "energy_charts_prices.csv": {
+      "rows": 949067,
+      "sha256": "e8bd0007495a5b4f78914cc1af0eea81313fd9b2e7eae1246a089ccef25bcde6"
+    },
+    "energy_charts_german_system.csv": {
+      "rows": 199772,
+      "sha256": "6bf60a12695dd03d4620f25dc65547261b4d89d21b842aa9ea0e7617fb0bb259"
+    },
+    "energy_charts_cross_border.csv": {
+      "rows": 199772,
+      "sha256": "92ea40109de211c96e606bac08e891e6b274c564ad1496260d2a56c859d6e5c4"
+    },
+    "imf_portwatch_hormuz.csv": {
+      "rows": 620,
+      "sha256": "004da7e7d3ecaa76ecdf3982c5d9710ded0263162cb3f11ae86cad043e6c97d2"
+    },
+    "hourly_event_timestamps.csv": {
+      "rows": 2,
+      "sha256": "4c4843bed1a17ffee97f13e91e5bd90df46cee96d0d9959379d376dd7a70fcdc"
+    },
+    "eia_hormuz_quarterly.csv": {
+      "rows": 6,
+      "sha256": "9cad6af7b397f0182881f1fa5da2cc7217320c7c302b403f8d3a1cf164d55154"
+    },
+    "shipping_status_evidence.csv": {
+      "rows": 1,
+      "sha256": "0eaa8e8324c04b566172578b4d285a99db11947fcb9d04207d0a186a69c157f3"
+    },
+    "hormuz_event_table.csv": {
+      "rows": 7,
+      "sha256": "a44afaa4c2e2579c97c9496d2b784df3c981b6aad4a6a4b7f78d0fdfd13589e8"
+    }
+  },
+  "notes": [
+    "Energy-Charts responses report CC BY 4.0 source licensing.",
+    "PortWatch is AIS-derived; GPS jamming, spoofing and dark vessels can bias counts.",
+    "The donor declaration is design metadata, not an empirical claim that controls are unaffected.",
+    "Quarterly EIA oil/LNG flows are external validation and are not upsampled into daily regressions.",
+    "The JMIC advisory verifies the Strait was open by 18 June 2026, not the exact reopening instant.",
+    "The primary RQ2a exposure is the three-state source event table; PortWatch traffic is robustness-only."
+  ]
+}

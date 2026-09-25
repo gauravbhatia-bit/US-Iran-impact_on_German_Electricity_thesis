@@ -1,0 +1,43 @@
+# Pipeline Narrative Report
+
+## Price spike explanations
+
+**SMARD electricity price -- notable highs/lows:**
+- SMARD price spiked to 699.4 on 2022-08-26 -- no conflict event nearby, but flagged as a Dunkelflaute (low renewable output) day -- likely weather-driven, not conflict-driven
+- SMARD price spiked to 660.2 on 2022-08-30 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- SMARD price spiked to 658.4 on 2022-08-29 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- SMARD price dropped to -53.9 on 2023-07-02 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- SMARD price dropped to -17.0 on 2021-04-05 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- SMARD price dropped to -16.3 on 2026-04-05 -- 2 day(s) from event: "A two-week ceasefire agreement is reached...." (expected direction: down)
+
+**Brent crude -- notable highs/lows:**
+- Brent spiked to 138.2 on 2026-04-07 -- 0 day(s) from event: "A two-week ceasefire agreement is reached...." (expected direction: down)
+- Brent spiked to 133.2 on 2022-03-08 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- Brent dropped to 50.4 on 2021-01-04 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- Brent dropped to 53.2 on 2021-01-05 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+
+**TTF gas -- notable highs/lows:**
+- TTF gas spiked to 339.2 on 2022-08-26 -- no conflict event nearby, but flagged as a Dunkelflaute (low renewable output) day -- likely weather-driven, not conflict-driven
+- TTF gas spiked to 339.2 on 2022-08-27 -- no conflict event nearby, but flagged as a Dunkelflaute (low renewable output) day -- likely weather-driven, not conflict-driven
+- TTF gas dropped to 15.5 on 2021-03-03 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+- TTF gas dropped to 15.7 on 2021-02-26 -- no conflict event within 5 days and not a Dunkelflaute day -- unexplained by this dataset, worth a manual look
+
+## Sentiment validation
+
+Overall mean sentiment across the coverage window is -0.25 -- consistently negative, which is expected for coverage of an active war (articles about even positive developments like a ceasefire still reference the surrounding conflict). Because of this, the check compares each event's sentiment against its own 21-day rolling baseline rather than against zero.
+Using relative-baseline matching, sentiment moved in the expected direction for 6/6 checkable events.
+
+## Feature category breakdown
+
+Engineered: lag feature           56
+News sentiment                    33
+Engineered: rolling volatility     6
+Weather / renewable generation     5
+Target (electricity price)         4
+Macro / geopolitical driver        4
+Other / uncategorized              4
+Calendar                           4
+Engineered: outlier flag           2
+Identifier                         1
+
+**Total features: 119**

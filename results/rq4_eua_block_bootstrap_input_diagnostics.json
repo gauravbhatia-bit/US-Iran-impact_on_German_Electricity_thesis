@@ -1,0 +1,6 @@
+{
+  "eua_source": "eua_daily.csv",
+  "eua_available_rows": 1928,
+  "n_completed_folds": 244,
+  "n_shock_folds": 79
+}

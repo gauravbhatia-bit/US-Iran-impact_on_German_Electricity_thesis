@@ -1,0 +1,120 @@
+column,description,dtype,pct_missing,min,max,mean
+date,calendar date,datetime64[ns],0.0,,,
+smard_mean,"German day-ahead electricity price, daily mean (EUR/MWh)",float64,0.0,-53.871,699.442,117.288
+smard_min,"German day-ahead electricity price, daily minimum (EUR/MWh)",float64,0.0,-500.0,569.21,61.297
+smard_max,"German day-ahead electricity price, daily maximum (EUR/MWh)",float64,0.0,0.0,936.28,185.119
+smard_std,"German day-ahead electricity price, daily std dev within the day",float64,0.0,1.122,260.958,37.083
+DCOILBRENTEU,Brent crude oil price (USD/barrel),float64,0.0,50.37,138.21,82.001
+DCOILBRENTEU_imputed,(no description available -- check column name),int64,0.0,0,1,0.308
+DEXUSEU,EUR/USD exchange rate,float64,0.0,0.962,1.23,1.113
+DEXUSEU_imputed,(no description available -- check column name),int64,0.0,0,1,0.314
+gpr_daily,"Geopolitical Risk index, daily (Caldara & Iacoviello)",float64,0.0,0.0,540.827,133.532
+gpr_daily_imputed,(no description available -- check column name),int64,0.0,0,0,0.0
+ttf_eur_mwh,Dutch TTF natural gas price (EUR/MWh),float64,0.0,15.525,339.195,57.009
+ttf_eur_mwh_imputed,(no description available -- check column name),int64,0.0,0,1,0.308
+wind_offshore_mwh,"offshore wind generation, Germany (MWh/day)",float64,0.0,179.0,190655.49,68966.032
+wind_onshore_mwh,"onshore wind generation, Germany (MWh/day)",float64,0.0,7272.25,1064138.0,290147.292
+solar_mwh,"solar (photovoltaic) generation, Germany (MWh/day)",float64,0.0,4917.25,528207.23,176212.892
+renewable_output_mwh,combined wind offshore + onshore + solar output (MWh),float64,0.0,44120.25,1229186.0,535326.216
+dunkelflaute_flag,1 if renewable output was in the bottom 15% for that period (weather-driven low-output day),int64,0.0,0,1,0.159
+guardian_sentiment_mean,"mean VADER sentiment of Guardian articles that day (Iran/Hormuz-scoped, -1 to +1)",float64,84.5,-0.929,0.683,-0.254
+guardian_sentiment_min,most negative article sentiment that day,float64,84.5,-0.979,0.683,-0.748
+guardian_sentiment_max,most positive article sentiment that day,float64,84.5,-0.929,0.949,0.41
+guardian_article_count,number of clean (non-noise) Guardian articles that day,float64,84.5,1.0,45.0,11.284
+sentiment_available,"1 if Guardian sentiment exists for this date, 0 if outside the Sept 2025+ coverage window",int64,0.0,0,1,0.155
+smard_mean_outlier_flag,1 if 'smard_mean' was a statistical outlier that day (z-score > 3),int64,0.0,0,1,0.032
+DCOILBRENTEU_outlier_flag,1 if 'DCOILBRENTEU' was a statistical outlier that day (z-score > 3),int64,0.0,0,1,0.014
+smard_mean_lag1,value of 'smard_mean' from 1 day(s) earlier,float64,0.0,-53.871,699.442,117.275
+smard_mean_lag2,value of 'smard_mean' from 2 day(s) earlier,float64,0.1,-53.871,699.442,117.278
+smard_mean_lag3,value of 'smard_mean' from 3 day(s) earlier,float64,0.1,-53.871,699.442,117.298
+smard_mean_lag4,value of 'smard_mean' from 4 day(s) earlier,float64,0.2,-53.871,699.442,117.313
+smard_mean_lag5,value of 'smard_mean' from 5 day(s) earlier,float64,0.2,-53.871,699.442,117.3
+smard_mean_lag6,value of 'smard_mean' from 6 day(s) earlier,float64,0.3,-53.871,699.442,117.296
+smard_mean_lag7,value of 'smard_mean' from 7 day(s) earlier,float64,0.3,-53.871,699.442,117.279
+DCOILBRENTEU_lag1,value of 'DCOILBRENTEU' from 1 day(s) earlier,float64,0.0,50.37,138.21,81.994
+DCOILBRENTEU_lag2,value of 'DCOILBRENTEU' from 2 day(s) earlier,float64,0.1,50.37,138.21,81.99
+DCOILBRENTEU_lag3,value of 'DCOILBRENTEU' from 3 day(s) earlier,float64,0.1,50.37,138.21,81.986
+DCOILBRENTEU_lag4,value of 'DCOILBRENTEU' from 4 day(s) earlier,float64,0.2,50.37,138.21,81.983
+DCOILBRENTEU_lag5,value of 'DCOILBRENTEU' from 5 day(s) earlier,float64,0.2,50.37,138.21,81.979
+DCOILBRENTEU_lag6,value of 'DCOILBRENTEU' from 6 day(s) earlier,float64,0.3,50.37,138.21,81.975
+DCOILBRENTEU_lag7,value of 'DCOILBRENTEU' from 7 day(s) earlier,float64,0.3,50.37,138.21,81.972
+DEXUSEU_lag1,value of 'DEXUSEU' from 1 day(s) earlier,float64,0.0,0.962,1.23,1.113
+DEXUSEU_lag2,value of 'DEXUSEU' from 2 day(s) earlier,float64,0.1,0.962,1.23,1.113
+DEXUSEU_lag3,value of 'DEXUSEU' from 3 day(s) earlier,float64,0.1,0.962,1.23,1.113
+DEXUSEU_lag4,value of 'DEXUSEU' from 4 day(s) earlier,float64,0.2,0.962,1.23,1.113
+DEXUSEU_lag5,value of 'DEXUSEU' from 5 day(s) earlier,float64,0.2,0.962,1.23,1.112
+DEXUSEU_lag6,value of 'DEXUSEU' from 6 day(s) earlier,float64,0.3,0.962,1.23,1.112
+DEXUSEU_lag7,value of 'DEXUSEU' from 7 day(s) earlier,float64,0.3,0.962,1.23,1.112
+ttf_eur_mwh_lag1,value of 'ttf_eur_mwh' from 1 day(s) earlier,float64,0.0,15.525,339.195,57.002
+ttf_eur_mwh_lag2,value of 'ttf_eur_mwh' from 2 day(s) earlier,float64,0.1,15.525,339.195,56.996
+ttf_eur_mwh_lag3,value of 'ttf_eur_mwh' from 3 day(s) earlier,float64,0.1,15.525,339.195,56.991
+ttf_eur_mwh_lag4,value of 'ttf_eur_mwh' from 4 day(s) earlier,float64,0.2,15.525,339.195,56.986
+ttf_eur_mwh_lag5,value of 'ttf_eur_mwh' from 5 day(s) earlier,float64,0.2,15.525,339.195,56.981
+ttf_eur_mwh_lag6,value of 'ttf_eur_mwh' from 6 day(s) earlier,float64,0.3,15.525,339.195,56.976
+ttf_eur_mwh_lag7,value of 'ttf_eur_mwh' from 7 day(s) earlier,float64,0.3,15.525,339.195,56.971
+renewable_output_mwh_lag1,value of 'renewable_output_mwh' from 1 day(s) earlier,float64,0.0,44120.25,1229186.0,535177.373
+renewable_output_mwh_lag2,value of 'renewable_output_mwh' from 2 day(s) earlier,float64,0.1,44120.25,1229186.0,535025.474
+renewable_output_mwh_lag3,value of 'renewable_output_mwh' from 3 day(s) earlier,float64,0.1,44120.25,1229186.0,534872.372
+renewable_output_mwh_lag4,value of 'renewable_output_mwh' from 4 day(s) earlier,float64,0.2,44120.25,1229186.0,534698.417
+renewable_output_mwh_lag5,value of 'renewable_output_mwh' from 5 day(s) earlier,float64,0.2,44120.25,1229186.0,534629.941
+renewable_output_mwh_lag6,value of 'renewable_output_mwh' from 6 day(s) earlier,float64,0.3,44120.25,1229186.0,534435.8
+renewable_output_mwh_lag7,value of 'renewable_output_mwh' from 7 day(s) earlier,float64,0.3,44120.25,1229186.0,534341.008
+dunkelflaute_flag_lag1,value of 'dunkelflaute_flag' from 1 day(s) earlier,float64,0.0,0.0,1.0,0.159
+dunkelflaute_flag_lag2,value of 'dunkelflaute_flag' from 2 day(s) earlier,float64,0.1,0.0,1.0,0.159
+dunkelflaute_flag_lag3,value of 'dunkelflaute_flag' from 3 day(s) earlier,float64,0.1,0.0,1.0,0.159
+dunkelflaute_flag_lag4,value of 'dunkelflaute_flag' from 4 day(s) earlier,float64,0.2,0.0,1.0,0.159
+dunkelflaute_flag_lag5,value of 'dunkelflaute_flag' from 5 day(s) earlier,float64,0.2,0.0,1.0,0.159
+dunkelflaute_flag_lag6,value of 'dunkelflaute_flag' from 6 day(s) earlier,float64,0.3,0.0,1.0,0.159
+dunkelflaute_flag_lag7,value of 'dunkelflaute_flag' from 7 day(s) earlier,float64,0.3,0.0,1.0,0.159
+sentiment_available_lag1,value of 'sentiment_available' from 1 day(s) earlier,float64,0.0,0.0,1.0,0.154
+sentiment_available_lag2,value of 'sentiment_available' from 2 day(s) earlier,float64,0.1,0.0,1.0,0.154
+sentiment_available_lag3,value of 'sentiment_available' from 3 day(s) earlier,float64,0.1,0.0,1.0,0.154
+sentiment_available_lag4,value of 'sentiment_available' from 4 day(s) earlier,float64,0.2,0.0,1.0,0.153
+sentiment_available_lag5,value of 'sentiment_available' from 5 day(s) earlier,float64,0.2,0.0,1.0,0.153
+sentiment_available_lag6,value of 'sentiment_available' from 6 day(s) earlier,float64,0.3,0.0,1.0,0.152
+sentiment_available_lag7,value of 'sentiment_available' from 7 day(s) earlier,float64,0.3,0.0,1.0,0.152
+gpr_daily_lag1,value of 'gpr_daily' from 1 day(s) earlier,float64,0.0,0.0,540.827,133.516
+gpr_daily_lag2,value of 'gpr_daily' from 2 day(s) earlier,float64,0.1,0.0,540.827,133.51
+gpr_daily_lag3,value of 'gpr_daily' from 3 day(s) earlier,float64,0.1,0.0,540.827,133.536
+gpr_daily_lag4,value of 'gpr_daily' from 4 day(s) earlier,float64,0.2,0.0,540.827,133.549
+gpr_daily_lag5,value of 'gpr_daily' from 5 day(s) earlier,float64,0.2,0.0,540.827,133.526
+gpr_daily_lag6,value of 'gpr_daily' from 6 day(s) earlier,float64,0.3,0.0,540.827,133.51
+gpr_daily_lag7,value of 'gpr_daily' from 7 day(s) earlier,float64,0.3,0.0,540.827,133.504
+guardian_sentiment_mean_lag1,value of 'guardian_sentiment_mean' from 1 day(s) earlier,float64,84.6,-0.929,0.683,-0.254
+guardian_sentiment_mean_lag2,value of 'guardian_sentiment_mean' from 2 day(s) earlier,float64,84.6,-0.929,0.683,-0.253
+guardian_sentiment_mean_lag3,value of 'guardian_sentiment_mean' from 3 day(s) earlier,float64,84.7,-0.929,0.683,-0.254
+guardian_sentiment_mean_lag4,value of 'guardian_sentiment_mean' from 4 day(s) earlier,float64,84.7,-0.929,0.683,-0.254
+guardian_sentiment_mean_lag5,value of 'guardian_sentiment_mean' from 5 day(s) earlier,float64,84.8,-0.929,0.683,-0.254
+guardian_sentiment_mean_lag6,value of 'guardian_sentiment_mean' from 6 day(s) earlier,float64,84.8,-0.929,0.683,-0.255
+guardian_sentiment_mean_lag7,value of 'guardian_sentiment_mean' from 7 day(s) earlier,float64,84.9,-0.929,0.683,-0.256
+guardian_sentiment_min_lag1,value of 'guardian_sentiment_min' from 1 day(s) earlier,float64,84.6,-0.979,0.683,-0.747
+guardian_sentiment_min_lag2,value of 'guardian_sentiment_min' from 2 day(s) earlier,float64,84.6,-0.979,0.683,-0.747
+guardian_sentiment_min_lag3,value of 'guardian_sentiment_min' from 3 day(s) earlier,float64,84.7,-0.979,0.683,-0.746
+guardian_sentiment_min_lag4,value of 'guardian_sentiment_min' from 4 day(s) earlier,float64,84.7,-0.979,0.683,-0.746
+guardian_sentiment_min_lag5,value of 'guardian_sentiment_min' from 5 day(s) earlier,float64,84.8,-0.979,0.683,-0.746
+guardian_sentiment_min_lag6,value of 'guardian_sentiment_min' from 6 day(s) earlier,float64,84.8,-0.979,0.683,-0.745
+guardian_sentiment_min_lag7,value of 'guardian_sentiment_min' from 7 day(s) earlier,float64,84.9,-0.979,0.683,-0.745
+guardian_sentiment_max_lag1,value of 'guardian_sentiment_max' from 1 day(s) earlier,float64,84.6,-0.929,0.949,0.41
+guardian_sentiment_max_lag2,value of 'guardian_sentiment_max' from 2 day(s) earlier,float64,84.6,-0.929,0.949,0.41
+guardian_sentiment_max_lag3,value of 'guardian_sentiment_max' from 3 day(s) earlier,float64,84.7,-0.929,0.949,0.409
+guardian_sentiment_max_lag4,value of 'guardian_sentiment_max' from 4 day(s) earlier,float64,84.7,-0.929,0.949,0.409
+guardian_sentiment_max_lag5,value of 'guardian_sentiment_max' from 5 day(s) earlier,float64,84.8,-0.929,0.949,0.408
+guardian_sentiment_max_lag6,value of 'guardian_sentiment_max' from 6 day(s) earlier,float64,84.8,-0.929,0.949,0.408
+guardian_sentiment_max_lag7,value of 'guardian_sentiment_max' from 7 day(s) earlier,float64,84.9,-0.929,0.949,0.406
+guardian_article_count_lag1,value of 'guardian_article_count' from 1 day(s) earlier,float64,84.6,1.0,45.0,11.295
+guardian_article_count_lag2,value of 'guardian_article_count' from 2 day(s) earlier,float64,84.6,1.0,45.0,11.286
+guardian_article_count_lag3,value of 'guardian_article_count' from 3 day(s) earlier,float64,84.7,1.0,45.0,11.312
+guardian_article_count_lag4,value of 'guardian_article_count' from 4 day(s) earlier,float64,84.7,1.0,45.0,11.329
+guardian_article_count_lag5,value of 'guardian_article_count' from 5 day(s) earlier,float64,84.8,1.0,45.0,11.327
+guardian_article_count_lag6,value of 'guardian_article_count' from 6 day(s) earlier,float64,84.8,1.0,45.0,11.331
+guardian_article_count_lag7,value of 'guardian_article_count' from 7 day(s) earlier,float64,84.9,1.0,45.0,11.323
+smard_mean_vol7d,7-day rolling volatility (std dev) of 'smard_mean',float64,0.3,3.075,174.951,30.88
+smard_mean_vol30d,30-day rolling volatility (std dev) of 'smard_mean',float64,1.5,9.183,165.335,38.969
+DCOILBRENTEU_vol7d,7-day rolling volatility (std dev) of 'DCOILBRENTEU',float64,0.3,0.176,10.862,1.734
+DCOILBRENTEU_vol30d,30-day rolling volatility (std dev) of 'DCOILBRENTEU',float64,1.5,0.632,16.776,3.389
+ttf_eur_mwh_vol7d,7-day rolling volatility (std dev) of 'ttf_eur_mwh',float64,0.3,0.079,49.247,2.976
+ttf_eur_mwh_vol30d,30-day rolling volatility (std dev) of 'ttf_eur_mwh',float64,1.5,0.391,50.168,6.331
+day_of_week,0=Monday ... 6=Sunday,int64,0.0,0,6,2.998
+month,"calendar month, 1-12",int64,0.0,1,12,6.298
+is_weekend,1 if Saturday/Sunday,int64,0.0,0,1,0.285
+is_holiday,1 if a German public holiday,int64,0.0,0,1,0.024

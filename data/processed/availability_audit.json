@@ -1,0 +1,15 @@
+{
+  "policy": "daily date-only closes use lag 2; electricity history uses lag 1",
+  "auction_cutoff": "EPEX day-ahead auction is treated as a pre-noon D-1 cutoff",
+  "safe_lag_features": {
+    "electricity_target": "lag1",
+    "ttf_close": "lag2",
+    "brent_close": "lag2",
+    "eurusd_close": "lag2",
+    "gpr_daily": "lag2",
+    "guardian_news": "lag2",
+    "eua_auction": "lag2",
+    "hormuz_traffic": "lag2"
+  },
+  "raw_manifest_present": true
+}
